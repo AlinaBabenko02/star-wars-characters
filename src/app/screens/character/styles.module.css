@@ -1,0 +1,23 @@
+.root {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.back {
+  background-image: url("../../../../public/images/planet.png");
+  background-size: cover;
+  background-position-x: center;
+  color: #1f1f3a;
+  font-size: 24px;
+  font-weight: bold;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  width: 150px;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

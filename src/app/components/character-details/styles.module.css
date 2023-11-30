@@ -1,0 +1,38 @@
+.character {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .title {
+    color: #fcdf2b;
+    font-size: 24px;
+    text-align: center;
+
+    .name {
+      font-size: 44px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      @media only screen and (max-width: 600px) {
+        font-size: 32px;
+      }
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.detail {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  flex-direction: row;
+  gap: 8px;
+
+  .heading {
+    text-decoration: underline;
+  }
+}
