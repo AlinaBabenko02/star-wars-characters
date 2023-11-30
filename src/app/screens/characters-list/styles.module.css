@@ -1,0 +1,13 @@
+.root {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 50vw;
+
+  @media only screen and (max-width: 600px) {
+    max-width: 100%;
+  }
+}

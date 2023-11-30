@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { StarryBackground } from "./components/starry-background/StarryBackground";
-import { CharactersListScreen } from "./screens/characters-list/CharactersList";
-import { CharacterScreen } from "./screens/character/Character";
+import { CharactersListScreen } from "./screens/characters-list/CharactersListScreen";
+import { CharacterScreen } from "./screens/character/CharacterScreen";
 
 function App() {
   return (
