@@ -9,3 +9,10 @@ export const fetchCharacters = async (
   await (
     await axios.get(`${baseURL}?${params}`)
   ).data.results;
+
+export const fetchCharacter = async (
+  characterId: string
+): Promise<CharacterType> =>
+  await (
+    await axios.get(`${baseURL}/${characterId}`)
+  ).data;
