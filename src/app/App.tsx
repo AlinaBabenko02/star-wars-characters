@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { StarryBackground } from "./components/starry-background/StarryBackground";
 import { CharactersListScreen } from "./screens/characters-list/CharactersListScreen";
 import { CharacterScreen } from "./screens/character/CharacterScreen";
-import { antdTheme } from "../data/theme";
+import { antdTheme } from "../data/utils/theme";
 
 const queryClient = new QueryClient();
 

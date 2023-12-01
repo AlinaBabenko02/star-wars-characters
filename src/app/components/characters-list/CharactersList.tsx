@@ -15,7 +15,9 @@ export const CharactersList: React.FC<CharactersListProps> = ({
   return (
     <div className={s.list}>
       {!isLoading && characters ? (
-        characters.map((character) => <CharacterItem character={character} />)
+        characters.map((character) => (
+          <CharacterItem character={character} key={character.url} />
+        ))
       ) : (
         <Loader />
       )}

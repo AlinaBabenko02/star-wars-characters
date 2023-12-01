@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
-import s from "./styles.module.css";
 import { CharacterType } from "../../../data/types/CharacterType";
+import { getCharacterId } from "../../../data/utils/getCharacterId";
+import s from "./styles.module.css";
 
 export const CharacterItem: React.FC<{
   character: CharacterType;
 }> = ({ character }) => {
+  const characterId = getCharacterId(character.url);
+
   let avatarImage: string;
   switch (character.gender) {
     case "female":
@@ -18,7 +21,7 @@ export const CharacterItem: React.FC<{
   }
 
   return (
-    <Link to="/characters/1" className={s.item}>
+    <Link to={`/characters/${characterId}`} className={s.item}>
       <img src={`images/${avatarImage}.png`} alt="Star Wars" height={80} />
       <div>
         <div className={s.name}>{character.name}</div>
