@@ -1,4 +1,5 @@
 import { CharacterType } from "../../../data/types/CharacterType";
+import { Loader } from "../loader/Loader";
 import { CharacterItem } from "./CharacterItem";
 import s from "./styles.module.css";
 
@@ -13,9 +14,11 @@ export const CharactersList: React.FC<CharactersListProps> = ({
 }) => {
   return (
     <div className={s.list}>
-      {!isLoading && characters
-        ? characters.map((character) => <CharacterItem character={character} />)
-        : "load"}
+      {!isLoading && characters ? (
+        characters.map((character) => <CharacterItem character={character} />)
+      ) : (
+        <Loader />
+      )}
     </div>
   );
 };
