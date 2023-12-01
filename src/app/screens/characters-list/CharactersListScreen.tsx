@@ -7,7 +7,7 @@ import { Notification } from "../../components/characters-list/Notification";
 
 const { Search } = Input;
 
-export const CharactersListScreen = () => {
+export const CharactersListScreen: React.FC = () => {
   const [searchValue, setSearchValue] = useState<string>("");
   const [searchIsValid, setSearchIsValid] = useState<boolean>(true);
 

@@ -3,7 +3,7 @@ import { CharacterDetails } from "../../components/character-details/CharacterDe
 import s from "./styles.module.css";
 import { useCharacter } from "../../../data/api/hooks";
 
-export const CharacterScreen = () => {
+export const CharacterScreen: React.FC = () => {
   let { id } = useParams();
   const { data: character, isLoading: characterLoading } = useCharacter(id!);
 
