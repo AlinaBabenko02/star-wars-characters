@@ -11,3 +11,14 @@
     max-width: 100%;
   }
 }
+.search {
+  width: 60%;
+
+  :global(.ant-input-search-button) {
+    height: 44px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
