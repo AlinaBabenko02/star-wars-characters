@@ -16,6 +16,7 @@ export const CharactersList: React.FC<CharactersListProps> = ({
   if (isLoading) {
     return <Loader />;
   }
+
   return (
     <div className={s.list}>
       {characters && characters.length ? (

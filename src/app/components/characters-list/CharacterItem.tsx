@@ -6,7 +6,7 @@ import s from "./styles.module.css";
 export const CharacterItem: React.FC<{
   character: CharacterType;
 }> = ({ character }) => {
-  const characterId = getCharacterId(character.url);
+  const characterId: string = getCharacterId(character.url);
 
   let avatarImage: string;
   switch (character.gender) {

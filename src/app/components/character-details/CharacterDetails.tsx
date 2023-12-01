@@ -11,8 +11,8 @@ interface CharacterDetailsProps {
 export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
   character,
   isLoading,
-}) => {
-  return !isLoading && character ? (
+}) =>
+  !isLoading && character ? (
     <div className={s.character}>
       <div className={s.title}>
         <div className={s.name}>{character.name}</div>
@@ -30,4 +30,3 @@ export const CharacterDetails: React.FC<CharacterDetailsProps> = ({
   ) : (
     <Loader />
   );
-};

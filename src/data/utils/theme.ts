@@ -1,4 +1,6 @@
-export const antdTheme = {
+import { ThemeConfig } from "antd";
+
+export const antdTheme: ThemeConfig = {
   token: {
     colorPrimary: "#1f1f3a",
     borderRadius: 8,
