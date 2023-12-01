@@ -1,6 +1,6 @@
 import s from "./styles.module.css";
 
-interface DetailItemProps {
+export interface DetailItemProps {
   title: string;
   value: string;
 }
