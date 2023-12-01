@@ -20,6 +20,7 @@
   background-repeat: no-repeat;
   box-sizing: border-box;
   animation: animloaderBack 1s linear infinite alternate;
+  rotate: 45deg;
 }
 .loader::before {
   content: "";
